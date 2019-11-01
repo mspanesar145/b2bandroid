@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+          <EditText
+            android:id="@+id/sb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" \t Username"
+            android:background="@drawable/edittext_top_bg"
+            android:lines="1"
+            android:padding="15dp"
+            android:layout_margin="5sp"
+            android:singleLine="true" 
+            android:textColorHint="#aaa"
+            android:textColor="#000">
+            <requestFocus />
+            </EditText>
+            
+            <EditText
+            android:id="@+id/sb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_top_bg"
+            android:hint=" \t password"
+            android:lines="1"
+            android:layout_margin="5sp"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textColorHint="#aaa"
+            android:textColor="#000"/>
+         
+             
+               <Spinner
+			     android:id="@+id/sb3"
+			     android:layout_width="match_parent"
+			     android:layout_height="wrap_content"
+			     android:entries="@array/per"
+			     android:layout_margin="5sp"
+			      android:background="@drawable/button_default_bg"
+			     android:padding="10dp"
+			      />
+
+
+</LinearLayout>

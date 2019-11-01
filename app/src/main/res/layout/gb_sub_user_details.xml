@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:id="@+id/sv1_enq_post_size_details"
+       android:layout_width="fill_parent" 
+       android:layout_height="fill_parent"
+       android:scrollbars="horizontal" >
+<LinearLayout 
+    android:id="@+id/main_table_details_ll" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+<TableLayout
+            android:id="@+id/main_table_details" 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:shrinkColumns="*"  
+            android:stretchColumns="*" 
+            android:background="#ffffff">
+
+ </TableLayout> 
+ 
+<RelativeLayout 
+    android:id="@+id/rellay"  
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+   android:layout_gravity="center"
+    >
+      
+ <Button
+            android:id="@+id/btnedt"
+            android:layout_width="100sp"
+            android:layout_height="60sp"
+            android:background="@drawable/btn"
+            android:layout_margin="4dp"
+            android:onClick="action"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:text="Edit" />
+ 
+  <Button
+            android:id="@+id/btndel"
+            android:layout_width="100sp"
+            android:layout_height="60sp"
+            android:background="@drawable/btn"
+            android:layout_toRightOf="@+id/btnedt"
+            android:layout_margin="4dp"
+            android:onClick="action"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:text="Delete" />
+ 
+  <Button
+            android:id="@+id/btnAct"
+            android:layout_width="100sp"
+            android:layout_height="60sp"
+            android:background="@drawable/btn"
+            android:layout_margin="4dp"
+            android:onClick="action"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:layout_toRightOf="@+id/btndel"
+            android:text="Activity" />
+</RelativeLayout>
+</LinearLayout>
+   </ScrollView>
+   </RelativeLayout>
+   

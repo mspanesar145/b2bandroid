@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root_new2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+     android:padding="10dp"
+    >
+
+   <RelativeLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:padding="5dp"> 
+           <Button
+            android:id="@+id/btn1"
+            android:layout_width="90sp"
+            android:layout_height="90sp"
+            android:background="@drawable/ic_camera"
+            android:layout_margin="2dp"
+            android:padding="2dp"
+            android:textColor="#fff"
+            android:text="" />
+             
+              <Button
+            android:id="@+id/btn2"
+            android:layout_width="90sp"
+            android:layout_height="90sp"
+            android:background="@drawable/ic_gallery"
+            android:layout_margin="2dp"
+            android:padding="2dp"
+            android:layout_toRightOf="@+id/btn1"
+            android:textColor="#fff"
+            android:text="" />
+              
+                <Button  
+            android:id="@+id/btn3"
+            android:layout_width="90sp"
+            android:layout_height="90sp"
+            android:background="@drawable/ic_pdf"
+            android:layout_margin="2dp"
+            android:padding="2dp"
+            android:layout_toRightOf="@+id/btn2"
+            android:textColor="#fff"
+            android:text="" />
+             
+          
+</RelativeLayout>
+</LinearLayout>

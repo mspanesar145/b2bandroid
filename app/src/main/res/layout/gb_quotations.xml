@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" 
+  android:background="#eee">
+
+<TabHost 
+android:id="@android:id/tabhost"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+<LinearLayout
+android:orientation="vertical"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+<TabWidget
+android:id="@android:id/tabs"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:layout_marginBottom="6sp"
+android:background="#FFFFFF">
+<TextView
+android:tag="tab0"
+android:text="@string/q_tab1"
+android:layout_width="wrap_content"
+android:layout_height="fill_parent"/>
+<TextView
+android:tag="tab1"
+android:text="@string/q_tab2"
+android:layout_width="wrap_content"
+android:layout_height="fill_parent"/>
+
+</TabWidget>
+
+<FrameLayout
+android:id="@android:id/tabcontent"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+
+       <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+      <Spinner
+			     android:id="@+id/sp_1"
+			     android:layout_width="150sp"
+			     android:layout_height="wrap_content"
+			     android:layout_margin="5sp"
+			     android:layout_alignParentRight="true"
+			      android:background="@drawable/button_default_bg"
+			     android:padding="10dp"
+			      />   
+
+ <ListView
+        android:id="@+id/sentquot"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@drawable/list_selector1" 
+        android:layout_below="@+id/sp_1"
+        android:divider="#EEE"
+        android:dividerHeight="2dp"
+        android:layout_margin="3sp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp" 
+        />
+ 
+ 
+ </RelativeLayout>
+ 
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+ 
+            <Spinner
+			     android:id="@+id/sp_2"
+			     android:layout_width="150sp"
+			     android:layout_height="wrap_content"
+			     android:layout_margin="5sp"
+			     android:layout_alignParentRight="true"
+			      android:background="@drawable/button_default_bg"
+			     android:padding="10dp"
+			      />   
+
+ <ListView
+        android:id="@+id/receivedquot"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@drawable/list_selector1" 
+        android:divider="#EEE"
+         android:layout_below="@+id/sp_2"
+        android:dividerHeight="2dp"
+        android:layout_margin="3sp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp" 
+        />
+ 
+ 
+ </RelativeLayout>
+    
+   
+
+
+</FrameLayout>
+</LinearLayout>
+</TabHost> 
+    <!-- Footer aligned to bottom -->
+
+    </RelativeLayout>

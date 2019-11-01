@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#31B6E7" >
+
+              
+            
+            <CheckBox
+                android:id="@+id/chk1"
+                android:layout_width="250sp"
+                android:layout_height="wrap_content"
+                android:text="CATEGORIES" 
+                android:textColor="#fff"/>
+             
+            <CheckBox
+                android:id="@+id/chk2"
+                android:layout_width="250sp"
+                android:layout_height="wrap_content"
+                android:text="GROUPS"
+                 android:textColor="#fff"/>
+             
+            <CheckBox
+                android:id="@+id/chk3"
+                android:layout_width="250sp"
+                android:layout_height="wrap_content"
+                android:text="PARTNERS"
+                 android:textColor="#fff"/>
+            
+             <CheckBox
+                android:id="@+id/chk4"
+                android:layout_width="250sp"
+                android:layout_height="wrap_content"
+                android:text="ORDERS" 
+                 android:textColor="#fff"/>
+               <CheckBox
+                android:id="@+id/chk5"
+                android:layout_width="250sp"
+                android:layout_height="wrap_content"
+                android:text="SUB USERS" 
+                 android:textColor="#fff"/>
+                 <CheckBox
+                android:id="@+id/chk6"
+                android:layout_width="250sp"
+                android:layout_height="wrap_content"
+                android:text="SPECIFICATIONS"
+                 android:textColor="#fff" />
+                 
+                  <CheckBox
+                android:id="@+id/chk7"
+                android:layout_width="250sp"
+                android:layout_height="wrap_content"
+                android:text="PAYMENTS" 
+                 android:textColor="#fff"/>
+                  
+                   <CheckBox
+                android:id="@+id/chk8"
+                android:layout_width="250sp"
+                android:layout_height="wrap_content"
+                android:text="QUOTATIONS"
+                 android:textColor="#fff"
+                 />
+                   
+                   
+             
+           
+             
+          
+
+</LinearLayout>

@@ -1,0 +1,476 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl8_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:layout_gravity="center">
+    
+ 
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:layout_centerHorizontal="true">
+    
+     <LinearLayout
+    android:id="@+id/linearprofile"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    
+     >  
+         <RelativeLayout 
+    android:id="@+id/detailrow0"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+    
+       
+  
+    
+     </RelativeLayout>
+         
+       <RelativeLayout 
+    android:id="@+id/udetailrow0a"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5sp"
+    android:layout_gravity="center">
+    
+        <ImageView
+        android:id="@+id/imglogo"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_centerInParent="true"
+		android:src="@drawable/profile" 
+		android:layout_margin="10dp"
+		android:background="#fff"
+		android:padding="5sp"
+		android:layout_centerHorizontal="true"/> 
+ 
+    
+     </RelativeLayout>  
+      <View 
+    android:id="@+id/udetailtxthead0ab"
+    android:layout_width="match_parent"
+    android:layout_height="2sp"
+    android:background="#ccc"
+    android:layout_margin="10sp"
+    />     
+         
+    <RelativeLayout 
+    android:id="@+id/udetailrow1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10sp"
+    android:layout_gravity="center">
+    
+       
+    <TextView 
+    android:id="@+id/udetailtxthead1"
+    android:layout_width="100sp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:text="Name"
+    android:textStyle="bold"
+    />  
+    
+              <TextView 
+    android:id="@+id/udetailtxt1"
+    android:layout_width="200sp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:text="Mak kashyap"
+    />  
+     </RelativeLayout>
+     
+
+    <RelativeLayout 
+    android:id="@+id/udetailrow1a"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10sp"
+    android:layout_gravity="center">
+    
+       
+    <TextView 
+    android:id="@+id/udetailtxthead1a"
+    android:layout_width="100sp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:text="Company"
+    android:textStyle="bold"
+    />  
+    
+              <TextView 
+    android:id="@+id/udetailtxt1a"
+    android:layout_width="200sp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:gravity="left"
+    android:text="GB"
+    />  
+     </RelativeLayout>
+    
+     
+        <RelativeLayout 
+    android:id="@+id/udetailrow3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10sp"
+    android:layout_gravity="center">
+    
+       
+    <TextView 
+    android:id="@+id/udetailtxthead3"
+    android:layout_width="100sp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:text="Email 1"
+    android:textStyle="bold"
+    />  
+    
+    
+              <TextView 
+    android:id="@+id/udetailtxt3"
+    android:layout_width="200sp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:text="mohit@gadgetbytes.in"
+    android:gravity="left"
+    />  
+     </RelativeLayout>
+     
+        
+           <RelativeLayout 
+    android:id="@+id/udetailrow3a"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10sp"
+    android:layout_gravity="center">
+    
+       
+    <TextView 
+    android:id="@+id/udetailtxthead3a"
+    android:layout_width="100sp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:text="Email 2"
+    android:textStyle="bold"
+    />  
+    
+    
+              <TextView 
+    android:id="@+id/udetailtxt3a"
+    android:layout_width="200sp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:gravity="left"
+    android:text="mohit@gadgetbytes.in"
+    />  
+     </RelativeLayout>
+     
+          <RelativeLayout 
+    android:id="@+id/udetailrow4"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10sp"
+    android:layout_gravity="center">
+    
+       
+    <TextView 
+    android:id="@+id/udetailtxthead4"
+    android:layout_width="100sp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:gravity="left"
+    android:text="Mobile 1"
+    android:textStyle="bold"
+    />  
+    
+              <TextView 
+    android:id="@+id/udetailtxt4"
+    android:layout_width="200sp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:text="+917696685228"
+    />  
+     </RelativeLayout>
+     
+     <RelativeLayout 
+    android:id="@+id/udetailrow4a"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10sp"
+    android:layout_gravity="center">
+    
+       
+    <TextView 
+    android:id="@+id/udetailtxthead4a"
+    android:layout_width="100sp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:text="Mobile 2"
+    android:textStyle="bold"
+    />  
+    
+              <TextView 
+    android:id="@+id/udetailtxt4a"
+    android:layout_width="200sp"
+    android:gravity="left"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:text="+917696685228"
+    />  
+     </RelativeLayout>     
+          
+          
+            <RelativeLayout 
+    android:id="@+id/udetailrow5"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10sp"
+    android:layout_gravity="center">
+    
+       
+    <TextView 
+    android:id="@+id/udetailtxthead5"
+    android:layout_width="100sp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:text="Address"
+    android:textStyle="bold"
+    />  
+    
+    <TextView 
+    android:id="@+id/udetailtxt5"
+    android:layout_width="200sp"
+    android:gravity="left"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:text="SCO5, Surya Shopping Arcade, National Road, Ghumar Mandi, Ludhiana, Punjab 141001"
+    />  
+     </RelativeLayout>
+     
+            
+            
+                      <RelativeLayout 
+    android:id="@+id/udetailrow5a"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10sp"
+    android:layout_gravity="center">
+    
+       
+    <TextView 
+    android:id="@+id/udetailtxthead5a"
+    android:layout_width="100sp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:text="City"
+    android:textStyle="bold"
+    />  
+    
+    <TextView 
+    android:id="@+id/udetailtxt5a"
+    android:layout_width="200sp"
+    android:layout_height="wrap_content"
+    android:gravity="left"
+    android:layout_alignParentRight="true"
+    android:text="Ludhiana"
+    />  
+     </RelativeLayout>
+     
+                      
+                                <RelativeLayout 
+    android:id="@+id/udetailrow5b"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10sp"
+    android:layout_gravity="center">
+    
+       
+    <TextView 
+    android:id="@+id/udetailtxthead5b"
+    android:layout_width="100sp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:text="State"
+    android:textStyle="bold"
+    />  
+    
+    <TextView 
+    android:id="@+id/udetailtxt5b"
+    android:layout_width="200sp"
+    android:layout_height="wrap_content"
+    android:gravity="left"
+    android:layout_alignParentRight="true"
+    android:text="Punjab"
+    />  
+     </RelativeLayout>
+     
+              <RelativeLayout 
+    android:id="@+id/udetailrow6"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10sp"
+    android:layout_gravity="center">
+    
+       
+    <TextView 
+    android:id="@+id/udetailtxthead26"
+    android:layout_width="100sp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:gravity="left"
+    android:text="Country"
+    android:textStyle="bold"
+    />  
+    
+              <TextView 
+    android:id="@+id/udetailtxt6"
+    android:layout_width="200sp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:text="India"
+    />  
+     </RelativeLayout>
+     
+  
+    <RelativeLayout 
+    android:id="@+id/udetailrow7a"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10sp"
+    android:layout_gravity="center"
+    android:visibility="gone">
+    
+       
+    <TextView 
+    android:id="@+id/udetailtxthead7a"
+    android:layout_width="100sp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:gravity="left"
+    android:text="Credit Limit"
+    android:textStyle="bold"
+    />  
+    
+              <TextView 
+    android:id="@+id/udetailtxt7a"
+    android:layout_width="200sp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:text="0"
+    />  
+     </RelativeLayout>
+     
+    <View 
+    android:id="@+id/udetailtxthead0avv"
+    android:layout_width="match_parent"
+    android:layout_height="2sp"
+    android:background="#ccc"
+    android:layout_margin="10sp"
+    />      
+    <RelativeLayout 
+    android:id="@+id/udetailrow9"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10sp">
+              
+          <Button
+         android:id="@+id/btnrequest"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="@drawable/btn"
+         android:onClick="action"
+         android:layout_margin="10sp"
+         android:padding="8dp"
+         android:text="Send Partner Request"
+         android:layout_alignParentRight="true"
+         android:textColor="#fff" />
+          
+          <Button
+         android:id="@+id/btncancel"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="@drawable/btn"
+         android:onClick="action"
+         android:layout_margin="10sp"
+         android:padding="8dp"
+         android:text="Cancel Request"
+          android:layout_alignParentRight="true"
+         android:textColor="#fff"
+          android:visibility="gone" />
+          
+         <Button
+         android:id="@+id/acceptr"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="@drawable/btn"
+         android:onClick="action"
+         android:layout_margin="10sp"
+         android:padding="8dp"
+         android:text="Accept Request"
+         android:layout_alignParentRight="true"
+         android:textColor="#fff" 
+          android:visibility="gone"/>
+          
+          <Button
+         android:id="@+id/reject"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="@drawable/btn"
+         android:onClick="action"
+         android:layout_margin="10sp"
+         android:padding="8dp"
+         android:text="Reject"
+         android:layout_toLeftOf="@+id/acceptr"
+         android:textColor="#fff" 
+          android:visibility="gone"/>
+          
+          <Button
+         android:id="@+id/removep"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="@drawable/btn"
+         android:onClick="action"
+         android:layout_margin="10sp"
+         android:padding="8dp"
+         android:text="Remove Partner"
+          android:layout_alignParentRight="true"
+         android:textColor="#fff" 
+         android:visibility="gone"
+         />
+         <Button
+         android:id="@+id/btnProducts"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="@drawable/btn"
+         android:onClick="action2"
+         android:layout_margin="10sp"
+         android:padding="8dp"
+         android:layout_toLeftOf="@+id/removep"
+         android:text="Products"
+         android:textColor="#fff" 
+         android:visibility="gone"/>
+          
+         <Button
+         android:id="@+id/btnCredit"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="@drawable/btn"
+         android:onClick="action2"
+         android:layout_margin="10sp"
+         android:padding="8dp"
+         android:layout_toLeftOf="@+id/removep"
+         android:layout_below="@+id/btnProducts"
+         android:text="Credit Limit"
+         android:textColor="#fff" 
+         android:visibility="gone"/>
+          </RelativeLayout>
+         
+      </LinearLayout>
+   </ScrollView>
+</RelativeLayout>

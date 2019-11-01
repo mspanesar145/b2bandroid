@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee">
+
+   <ImageView
+        android:id="@+id/profilePic"
+        android:layout_width="300sp"
+        android:layout_height="300sp"
+        android:layout_centerInParent="true"
+		android:src="@drawable/profile" 
+		android:layout_margin="10dp"
+		android:background="#fff"
+		android:padding="5sp"
+		android:layout_centerHorizontal="true"
+		android:layout_alignParentTop="true"/> 
+		
+    <Button
+         android:id="@+id/btncadd"
+         android:layout_width="150sp"
+         android:layout_height="wrap_content"
+         android:layout_centerInParent="true"
+         android:layout_margin="5sp"
+         android:background="@drawable/btn"
+         android:padding="8dp"
+         android:text="UPLOAD"
+         android:layout_below="@+id/profilePic"
+         android:textColor="#fff" />
+</RelativeLayout>

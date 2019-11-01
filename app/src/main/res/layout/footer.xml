@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FF6600">
+    
+<LinearLayout 
+    android:id="@+id/icolay1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="#FF6600"
+    >
+    
+        <ImageView
+        android:id="@+id/ico1"
+        android:layout_width="60sp"
+        android:layout_height="60sp" 
+		android:src="@drawable/back" 
+		android:layout_margin="9dp"
+		android:padding="2sp"
+		android:onClick="action"/> 
+
+        <ImageView
+        android:id="@+id/ico3"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+		android:src="@drawable/ig" 
+		android:layout_margin="9dp"
+		android:padding="2sp"
+		android:onClick="action"/> 
+		
+		
+    <ImageView
+        android:id="@+id/ico4"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+		android:src="@drawable/fwd" 
+		android:layout_margin="9dp"
+		android:padding="2sp"
+		android:onClick="action"/> 
+
+</LinearLayout>
+
+  <LinearLayout 
+    android:id="@+id/icolay2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="#FF6600"
+    android:visibility="gone">  
+    
+       <ImageView
+        android:id="@+id/ico1a"
+        android:layout_width="60sp"
+        android:layout_height="60sp" 
+		android:src="@drawable/back" 
+		android:layout_margin="9dp"
+		android:padding="2sp"
+		android:onClick="action"/> 
+
+		
+       <ImageView
+        android:id="@+id/ico2a"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+		android:src="@drawable/can" 
+		android:layout_margin="9dp"
+		android:padding="2sp"
+		android:onClick="action"/> 
+		
+  
+       <ImageView
+        android:id="@+id/ico3a"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+		android:src="@drawable/acc" 
+		android:layout_margin="9dp"
+		android:padding="2sp"
+		android:onClick="action"/> 
+		
+		
+      <ImageView
+        android:id="@+id/ico4a"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+		android:src="@drawable/fwd" 
+		android:layout_margin="9dp"
+		android:padding="2sp"
+		android:onClick="action"/> 
+		
+		</LinearLayout>
+		
+ <LinearLayout 
+    android:id="@+id/icolay3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="#FF6600"
+    android:visibility="gone">  
+    
+       <ImageView
+        android:id="@+id/ico1b"
+        android:layout_width="60sp"
+        android:layout_height="60sp" 
+		android:src="@drawable/back" 
+		android:layout_margin="9dp"
+		android:padding="2sp"
+		android:onClick="action"/> 
+
+      <ImageView
+        android:id="@+id/ico2b"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+		android:src="@drawable/conf" 
+		android:layout_margin="9dp"
+		android:padding="2sp"
+		android:onClick="action"/> 
+		
+		</LinearLayout>
+		
+ <LinearLayout 
+    android:id="@+id/icolay4"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center" 
+    android:background="#FF6600"
+    android:visibility="gone">  
+    
+       <ImageView
+        android:id="@+id/ico1c"
+        android:layout_width="60sp"
+        android:layout_height="60sp" 
+		android:src="@drawable/back" 
+		android:layout_margin="9dp"
+		android:padding="2sp"
+		android:onClick="action"/> 
+
+      <ImageView
+        android:id="@+id/ico2c"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+		android:src="@drawable/dis" 
+		android:layout_margin="9dp"
+		android:padding="2sp"
+		android:onClick="action"/> 
+		
+		</LinearLayout>
+		
+  <LinearLayout 
+    android:id="@+id/icolay5"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center" 
+    android:background="#FF6600"
+    android:visibility="gone"
+   >  
+    
+       <ImageView
+        android:id="@+id/ico1d"
+        android:layout_width="60sp"
+        android:layout_height="60sp" 
+		android:src="@drawable/back" 
+		android:layout_margin="9dp"
+		android:padding="2sp"
+		android:onClick="action"/> 
+
+      <ImageView
+        android:id="@+id/ico2d"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+		android:src="@drawable/conf" 
+		android:layout_margin="9dp"
+		android:padding="2sp"
+		android:onClick="action"/> 
+		
+		</LinearLayout>
+		
+  <LinearLayout 
+    android:id="@+id/icolay6"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center" 
+    android:background="#FF6600"
+    android:visibility="gone"
+   >  
+    
+       <ImageView
+        android:id="@+id/ico1e"
+        android:layout_width="60sp"
+        android:layout_height="60sp" 
+		android:src="@drawable/back" 
+		android:layout_margin="9dp"
+		android:padding="2sp"
+		android:onClick="action"/> 
+
+		
+		</LinearLayout>
+		
+   <LinearLayout 
+    android:id="@+id/icolay7"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="#FF6600"
+    android:visibility="gone">  
+    
+       <ImageView
+        android:id="@+id/ico1f"
+        android:layout_width="60sp"
+        android:layout_height="60sp" 
+		android:src="@drawable/back" 
+		android:layout_margin="9dp"
+		android:padding="2sp"
+		android:onClick="action"/> 
+
+		
+       <ImageView
+        android:id="@+id/ico2f"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+		android:src="@drawable/can" 
+		android:layout_margin="9dp"
+		android:padding="2sp"
+		android:onClick="action"/> 
+		
+  
+       <ImageView
+        android:id="@+id/ico3f"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+		android:src="@drawable/acc" 
+		android:layout_margin="9dp"
+		android:padding="2sp"
+		android:onClick="action"/> 
+
+		
+		</LinearLayout>
+		
+</LinearLayout>
+

@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/mainbg">
+    
+    <ScrollView
+        android:id="@+id/reg_scroll"
+       android:layout_width="fill_parent" 
+       android:layout_height="fill_parent"
+       android:scrollbars="horizontal" >
+
+  <LinearLayout 
+    android:id="@+id/reg_len" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10sp">
+      
+  <EditText
+             android:id="@+id/e_edit1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:ems="10"
+             android:drawableLeft="@drawable/user"
+             android:hint="@string/reg1"
+             android:lines="1"
+             android:padding="15dp"
+             android:textColor="#fff"
+             android:singleLine="true"
+             android:textColorHint="#fff" />
+                   
+            <EditText
+            android:id="@+id/e_edit2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:drawableLeft="@drawable/user"
+            android:hint="@string/reg2a"
+            android:lines="1"
+            android:padding="15dp"
+            android:textColor="#fff"
+            android:singleLine="true"
+            android:textColorHint="#fff" />
+            
+               
+              <EditText
+            android:id="@+id/e_edit4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:drawableLeft="@drawable/email"
+            android:inputType="textEmailAddress"
+            android:hint="@string/reg3a"          
+            android:lines="1"
+            android:padding="15dp"
+            android:textColor="#fff"
+            android:singleLine="true"
+            android:textColorHint="#fff" />
+             
+            <EditText
+            android:id="@+id/e_edit5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:drawableLeft="@drawable/mobile"
+            android:inputType="number"
+            android:hint="@string/reg4"
+            android:lines="1"
+            android:padding="15dp"
+            android:textColor="#fff"
+            android:singleLine="true"
+            android:textColorHint="#fff" />
+            
+              <EditText
+            android:id="@+id/e_edit6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:drawableLeft="@drawable/mobile"
+            android:inputType="number"
+            android:hint="@string/reg4a"
+            android:lines="1"
+            android:padding="15dp"
+            android:textColor="#fff"
+            android:singleLine="true"
+            android:textColorHint="#fff" />
+              
+            <EditText
+            android:id="@+id/e_edit7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:drawableLeft="@drawable/address"
+            android:hint="@string/reg5"         
+            android:lines="1"
+            android:textColor="#fff"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textColorHint="#fff" />
+            
+            <EditText
+            android:id="@+id/e_edit8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:drawableLeft="@drawable/address"
+            android:hint="@string/reg10"         
+            android:lines="1"
+            android:textColor="#fff"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textColorHint="#fff" />
+   
+                
+             <Spinner
+			     android:id="@+id/e_edit9"
+			     android:layout_width="match_parent"
+			     android:layout_height="wrap_content"
+			     android:background="@drawable/button_default_bg"
+			     android:entries="@array/states"
+			     android:padding="10dp"
+			     android:layout_marginBottom="10sp"
+			      />
+             
+               <Spinner
+			     android:id="@+id/e_edit10"
+			     android:layout_width="match_parent"
+			     android:layout_height="wrap_content"
+			     android:background="@drawable/button_default_bg"
+			     android:entries="@array/countries"
+			     android:padding="10dp"
+			      />
+            
+       
+               
+
+           
+            <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:background="@drawable/btn"
+            android:layout_margin="4dp"
+            android:onClick="action"
+            android:padding="10dp"
+            android:textColor="#fff" 
+            android:text="@string/edt" />
+        
+
+
+   
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

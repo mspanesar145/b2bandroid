@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+          <EditText
+            android:id="@+id/UserInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" \t Name"
+            android:lines="1"
+            android:padding="12dp"
+            android:layout_margin="3sp"
+            android:singleLine="true" 
+            android:background="@drawable/edittext_top_bg"
+            android:textColorHint="#aaa"
+            android:textColor="#000">
+            <requestFocus />
+            </EditText>
+            
+            <EditText
+            android:id="@+id/UserInput2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" \t Order Limit"
+            android:lines="1"
+            android:padding="12dp"
+            android:layout_margin="3sp"
+            android:singleLine="true"
+            android:background="@drawable/edittext_top_bg"
+            android:inputType="number" 
+            android:textColorHint="#aaa"
+            android:textColor="#000"/>
+            
+            <EditText
+            android:id="@+id/UserInput3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_top_bg"
+            android:hint=" \t Note"
+            android:lines="2"
+            android:padding="12dp"
+            android:layout_margin="3sp"
+            android:singleLine="false" 
+            android:gravity="top"
+            android:textColorHint="#aaa"
+            android:textColor="#000">
+            </EditText>
+
+
+</LinearLayout>

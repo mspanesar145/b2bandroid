@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <ScrollView
+        android:id="@+id/reg_scroll"
+       android:layout_width="fill_parent" 
+       android:layout_height="fill_parent"
+       android:scrollbars="horizontal" >  
+        <LinearLayout
+            android:id="@+id/chpwdrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="4dp">
+            
+                <TextView
+     android:id="@+id/imgpath"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="" 
+     android:visibility="gone"
+    />
+            
+              <TextView
+                 android:id="@+id/txt_f"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="8dp"
+                android:text="Rating"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:typeface="sans" />
+
+             
+            
+               <RadioGroup
+        android:id="@+id/feedbk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/frd1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Poor" 
+            />
+
+        <RadioButton
+            android:id="@+id/frd2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Good" />
+        
+         <RadioButton
+            android:id="@+id/frd3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Neutral" 
+            android:checked="true" />
+         
+          <RadioButton
+            android:id="@+id/frd4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Statisfied" />
+          
+            <RadioButton
+            android:id="@+id/frd5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Excellent" />
+
+    </RadioGroup>
+    
+                 <TextView
+                 android:id="@+id/txt_remarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="8dp"
+                android:text="Remarks"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:typeface="sans" />
+                <EditText
+                android:id="@+id/feedrmrks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:singleLine="false"
+                android:lines="6"
+                android:gravity="top"
+                android:background="@drawable/edittext_top_bg"
+                android:ems="1"
+                 />
+                 <ImageView
+        android:id="@+id/imgPreview"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:visibility="gone"
+        android:padding="10sp" />
+                 <Button
+            android:id="@+id/btnAttach"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_margin="4dp"
+            android:onClick="opt"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:text="Attachment" />
+              
+              
+         <Button
+            android:id="@+id/btnFeeback"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:background="@drawable/btn"
+            android:layout_margin="4dp"
+            android:onClick="action"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:text="Confirm" />
+             
+
+         </LinearLayout>
+         
+</ScrollView>
+</RelativeLayout>

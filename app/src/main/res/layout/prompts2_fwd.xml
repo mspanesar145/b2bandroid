@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" 
+    android:background="#31B6E7" >
+
+           <Spinner
+			     android:id="@+id/sp_1_inp"
+			     android:layout_width="match_parent"
+			     android:layout_height="wrap_content"
+			     android:layout_margin="5sp"
+			      android:background="@drawable/button_default_bg"
+			     android:padding="10dp"
+			      />
+           
+    <RelativeLayout 
+    android:id="@+id/chks"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+            
+            <CheckBox
+                android:id="@+id/chk1"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:text="HIDE SELLER/BUYER" 
+                android:textColor="#fff"/>
+             
+            <CheckBox
+                android:id="@+id/chk2"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk1"
+                android:text="HIDE QUANTITIES"
+                android:textColor="#fff" />
+            
+              <CheckBox
+                android:id="@+id/chk3"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk2"
+                android:text="HIDE OPTIONS"
+                android:textColor="#fff" />
+             
+          
+             </RelativeLayout>
+             
+     
+
+
+</LinearLayout>

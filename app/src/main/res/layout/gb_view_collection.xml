@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout 
+   android:id="@+id/drops"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+      android:padding="10dp">
+    
+ 
+         
+             
+
+       <Spinner
+         android:id="@+id/sp_1"
+         android:layout_width="150sp"
+         android:layout_height="wrap_content"
+         android:layout_toLeftOf="@+id/calc"
+         android:layout_alignTop="@+id/calc" 
+         android:layout_margin="5sp"
+         android:background="@drawable/button_default_bg"
+         android:padding="10dp" />
+         <ImageView
+            android:id="@+id/calc"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/calc" 
+            android:layout_centerInParent="true"
+            android:padding="10sp"
+            android:onClick="srch"
+             />
+			      
+     </RelativeLayout>
+
+  <ListView
+      android:id="@+id/collections"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/drops"
+      android:layout_margin="3sp"
+      android:divider="#EEE"
+      android:dividerHeight="2dp"
+      android:listSelector="@drawable/list_selector1"
+      android:paddingLeft="3dp"
+      android:paddingRight="3dp" />
+
+</RelativeLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" 
+  android:background="#eee">
+
+
+<TabHost 
+android:id="@android:id/tabhost"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+>
+<LinearLayout
+android:orientation="vertical"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+<TabWidget
+android:id="@android:id/tabs"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:layout_marginBottom="6sp"
+android:background="#FFFFFF">
+<TextView
+android:tag="tab0"
+android:text="@string/p_tab1"
+android:layout_width="wrap_content"
+android:layout_height="fill_parent"/>
+<TextView
+android:tag="tab1"
+android:text="@string/p_tab2"
+android:layout_width="wrap_content"
+android:layout_height="fill_parent"/>
+<TextView
+android:tag="tab2"
+android:text="@string/p_tab3"
+android:layout_width="wrap_content"
+android:layout_height="fill_parent"/>
+
+<TextView
+android:tag="tab3"
+android:text="@string/p_tab4"
+android:layout_width="wrap_content"
+android:layout_height="fill_parent"/>
+
+</TabWidget>
+<FrameLayout
+android:id="@android:id/tabcontent"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+>
+
+
+  <RelativeLayout 
+    android:id="@+id/srchlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+     <EditText
+                android:id="@+id/keywordbox"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:singleLine="true"
+                android:lines="1"
+                android:layout_margin="7sp"
+                android:padding="7sp"
+                android:drawableLeft="@drawable/ic_search"
+                android:hint=" Search Partners"
+                android:background="@drawable/edittext_top_bg"
+                android:ems="1"
+                 /> 
+                 
+     <TextView
+     android:id="@+id/hintss"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Search by name, email, mobile, company" 
+     android:layout_marginLeft="10sp"
+     android:textColor="#777"
+     android:layout_below="@+id/keywordbox"
+     android:textSize="11sp"
+     />
+      
+    
+       <ListView
+        android:id="@+id/p_search_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@drawable/list_selector1" 
+        android:divider="#EEE"
+        android:dividerHeight="3dp"
+        android:layout_margin="3sp"
+        android:layout_below="@+id/keywordbox"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp" 
+        />
+    
+      </RelativeLayout>
+   
+   
+ 
+  <ListView
+        android:id="@+id/p_my_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@drawable/list_selector1" 
+        android:divider="#EEE"
+        android:dividerHeight="2dp"
+        android:layout_margin="3sp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp" 
+        />
+   
+
+
+<ListView
+        android:id="@+id/p_pending"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@drawable/list_selector1" 
+        android:divider="#EEE"
+        android:dividerHeight="2dp"
+        android:paddingLeft="3dp"
+        android:layout_margin="3sp"
+        android:paddingRight="3dp" 
+        />
+  <ListView
+        android:id="@+id/p_sent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@drawable/list_selector1" 
+        android:divider="#EEE"
+        android:dividerHeight="2dp"
+        android:layout_margin="3sp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp" 
+        />
+
+ <TextView
+     android:id="@+id/cid"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="" 
+     android:visibility="gone"
+     />
+ <TextView
+     android:id="@+id/oid"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="" 
+     android:visibility="gone"
+     />
+ <TextView
+     android:id="@+id/tp"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="" 
+     android:visibility="gone"
+     />
+</FrameLayout>
+</LinearLayout>
+</TabHost> 
+    <!-- Footer aligned to bottom -->
+
+    
+</RelativeLayout>

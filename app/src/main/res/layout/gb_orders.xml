@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee">
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+
+                <ListView
+                    android:id="@+id/accept"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3sp"
+                    android:divider="#EEE"
+                    android:dividerHeight="3dp"
+                    android:listSelector="@drawable/list_selector1"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp" />
+
+                <ListView
+                    android:id="@+id/sent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3sp"
+                    android:divider="#EEE"
+                    android:dividerHeight="3dp"
+                    android:listSelector="@drawable/list_selector1"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp" />
+
+
+                <ListView
+                    android:id="@+id/o_pending"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3sp"
+                    android:divider="#EEE"
+                    android:dividerHeight="3dp"
+                    android:listSelector="@drawable/list_selector1"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp" />
+
+
+                <ListView
+                    android:id="@+id/o_ignored"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3sp"
+                    android:divider="#EEE"
+                    android:dividerHeight="3dp"
+                    android:listSelector="@drawable/list_selector1"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp" />
+
+
+                <ListView
+                    android:id="@+id/o_direct"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3sp"
+                    android:divider="#EEE"
+                    android:dividerHeight="3dp"
+                    android:listSelector="@drawable/list_selector1"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp" />
+
+                <TextView
+                    android:id="@+id/cid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/oid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:scrollbars="none">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6sp"
+                    android:background="#FFFFFF">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:tag="tab0"
+                        android:text="@string/o_tab1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:tag="tab1"
+                        android:text="@string/o_tab2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:tag="tab2"
+                        android:text="@string/o_tab3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:tag="tab3"
+                        android:text="@string/o_tab4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:tag="tab4"
+                        android:text="@string/o_tab0" />
+
+
+                </TabWidget>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </TabHost>
+    <!-- Footer aligned to bottom -->
+</RelativeLayout>

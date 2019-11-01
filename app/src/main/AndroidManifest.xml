@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.denchion.b2b">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+
+    <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".B2BLogin"></activity>
+        <activity android:name=".B2BRegister"></activity>
+        <activity android:name=".B2BDashboard"></activity>
+        <activity android:name=".ForgotPassword"></activity>
+        <activity android:name=".Orders"></activity>
+
+
+        <activity android:name=".Quotations"></activity>
+        <activity android:name=".QuoteDetails"></activity>
+        <activity android:name=".Products"></activity>
+        <activity android:name=".Categories"></activity>
+
+        <activity android:name=".Messages"></activity>
+        <activity android:name=".Conversations"></activity>
+
+        <activity android:name=".SendPayment"></activity>
+        <activity android:name=".NewPayment"></activity>
+
+        <activity android:name=".Partners"></activity>
+        <activity android:name=".ProfileDetails"></activity>
+
+        <activity android:name=".ViewCollection"></activity>
+
+        <activity android:name=".AddSubUser"></activity>
+        <activity android:name=".SubUserDetails"></activity>
+        <activity android:name=".EditSub"></activity>
+        <activity android:name=".SubUserActivity"></activity>
+
+        <activity android:name=".AddUserToGroup"></activity>
+
+        <activity android:name=".ViewReminders"></activity>
+
+        <activity android:name=".Notifications"></activity>
+        <activity android:name=".NotificationDetails"></activity>
+        <activity android:name=".GroupNotDetails"></activity>
+
+        <activity android:name=".PromoOffers"></activity>
+
+        <activity android:name=".ThirdParty"></activity>
+    </application>
+
+</manifest>

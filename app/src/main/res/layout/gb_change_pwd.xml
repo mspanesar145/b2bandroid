@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+   <LinearLayout
+            android:id="@+id/chpwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="3dp" >
+            
+        <RelativeLayout
+            android:id="@+id/chpwdrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="4dp">
+            
+        <TextView
+                 android:id="@+id/pwd1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="8dp"
+                android:text="Old Password"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:typeface="sans" />
+             
+              <EditText
+                android:id="@+id/pwdedit1"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/pwd1"
+                android:singleLine="true"
+                android:lines="1"
+                android:inputType="textPassword"
+                android:background="@drawable/edittext_top_bg"
+                android:ems="1"
+                 />
+
+         </RelativeLayout>
+         
+        <RelativeLayout
+            android:id="@+id/chpwdrl2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="4dp">
+            
+        <TextView
+                 android:id="@+id/pwd2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="8dp"
+                android:text="New Password"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:typeface="sans" />
+             
+              <EditText
+                android:id="@+id/pwdedit2"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/pwd2"
+                android:singleLine="true"
+                android:lines="1"
+                android:inputType="textPassword"
+                android:background="@drawable/edittext_top_bg"
+                android:ems="1"
+                 />
+
+         </RelativeLayout>
+         
+        <RelativeLayout
+            android:id="@+id/chpwdrl3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="4dp">
+            
+        <TextView
+                 android:id="@+id/pwd3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="8dp"
+                android:text="Confirm Password"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:typeface="sans" />
+             
+              <EditText
+                android:id="@+id/pwdedit3"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/pwd3"
+                android:singleLine="true"
+                android:lines="1"
+                android:inputType="textPassword"
+                android:background="@drawable/edittext_top_bg"
+                android:ems="1"
+                 />
+
+         </RelativeLayout>
+         
+         <RelativeLayout
+            android:id="@+id/row4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15sp"
+            android:padding="4dp">
+             
+         <Button
+            android:id="@+id/btnpwd"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="4dp"
+           android:background="@drawable/btn"
+            android:onClick="changepwd"
+            android:padding="10dp"
+            android:text="Change" />
+
+         </RelativeLayout>
+         
+        </LinearLayout>
+
+</RelativeLayout>

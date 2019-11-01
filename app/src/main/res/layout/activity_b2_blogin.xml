@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/reg" >
+
+ 
+  <RelativeLayout 
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:padding="10dp" >
+        
+       <ImageView
+        android:id="@+id/imglogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+		android:src="@drawable/logo" 
+        android:padding="10dp" />
+      
+   
+         <EditText
+             android:id="@+id/etUserName"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:ems="10"
+             android:drawableLeft="@drawable/user"
+             android:layout_below="@+id/imglogo"
+             android:hint=" \t USERNAME"
+             android:lines="1"
+             android:padding="15dp"
+             android:singleLine="true"
+             android:textColorHint="#fff"
+             android:textColor="#fff" />
+             
+                  <EditText
+            android:id="@+id/etPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:drawableLeft="@drawable/pwd"
+            android:hint=" PASSWORD"
+            android:layout_below="@+id/etUserName"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textColorHint="#fff"
+            android:textColor="#fff" />
+        
+         <Button
+            android:id="@+id/btnSingIn"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:background="@drawable/btn"
+            android:layout_below="@+id/etPass"
+            android:layout_margin="4dp"
+            android:onClick="action"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:text="Sign In" />
+          
+           <Button
+            android:id="@+id/aortxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+             android:layout_below="@+id/ortxt"
+            android:layout_margin="4dp"
+            android:layout_alignParentLeft="true"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            android:text="Don't have an account yet?" />
+          
+               <Button
+            android:id="@+id/btnreg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_below="@+id/ortxt"
+            android:layout_toRightOf="@+id/aortxt"
+            android:layout_margin="4dp"
+            android:onClick="action"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Sign Up" />
+
+               <Button
+                   android:id="@+id/btnfpwd"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignRight="@+id/btnSingIn"
+                   android:layout_alignTop="@+id/btnSingIn"
+                   android:layout_marginTop="49dp"
+                   android:background="@android:color/transparent"
+                   android:onClick="action"
+                   android:text="Forgot Password?"
+                   android:textColor="#fff"
+                   android:textSize="14sp"
+                   android:textStyle="bold" />
+
+               <TextView
+                   android:id="@+id/ortxt"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignBaseline="@+id/btnfpwd"
+                   android:layout_alignBottom="@+id/btnfpwd"
+                   android:layout_centerHorizontal="true"
+                   android:padding="10dp"
+                   android:text="OR"
+                   android:textColor="#fff" />
+
+    </RelativeLayout>
+</RelativeLayout>

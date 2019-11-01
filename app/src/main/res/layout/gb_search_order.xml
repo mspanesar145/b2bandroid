@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+     <RelativeLayout 
+    android:id="@+id/srchlayout2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+     <EditText
+                android:id="@+id/keywordbox2"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:singleLine="true"
+                android:lines="1"
+                android:layout_margin="7sp"
+                android:padding="7sp"
+                android:drawableLeft="@drawable/ic_search"
+                android:hint=" Search Orders"
+                android:background="@drawable/edittext_top_bg"
+                android:ems="1"
+                 /> 
+      
+    
+       <ListView
+        android:id="@+id/sorders"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@drawable/list_selector1" 
+        android:divider="#EEE"
+        android:dividerHeight="3dp"
+        android:layout_margin="3sp"
+        android:layout_below="@+id/keywordbox2"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp" 
+        />
+    
+      </RelativeLayout>
+     
+</RelativeLayout>

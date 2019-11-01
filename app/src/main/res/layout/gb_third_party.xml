@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:id="@+id/rl0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30dp" 
+        android:layout_gravity="center">
+        
+             <TextView
+                   android:id="@+id/ortxt"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="UPLOAD TO SERVER"
+                   android:textColor="#000" 
+                   android:textSize="18sp"
+                   android:textStyle="bold"/>
+        
+        </RelativeLayout>
+    
+     <RelativeLayout 
+        android:id="@+id/rl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" 
+        android:layout_gravity="center">
+
+       <Button
+            android:id="@+id/btnUp1" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_drop"
+            android:layout_margin="4dp"
+            android:onClick="action"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:text="" /> 
+            
+          <Button
+            android:id="@+id/btnUp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_google"
+            android:layout_margin="4dp"
+            android:onClick="action"
+             android:layout_toRightOf="@+id/btnUp1"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:text="" /> 
+            </RelativeLayout>
+               <RelativeLayout 
+        android:id="@+id/rl2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" 
+         android:layout_gravity="center">
+            
+             <Button
+            android:id="@+id/btnUp3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_sky"
+            android:layout_margin="4dp"
+            android:onClick="action"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:text="" /> 
+            
+                <Button
+            android:id="@+id/btnUp4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_gmail"
+            android:layout_margin="4dp"
+            android:onClick="action"
+            android:layout_toRightOf="@+id/btnUp3"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:text="" /> 
+          </RelativeLayout>
+          
+                 <RelativeLayout 
+        android:id="@+id/rl3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" 
+         android:layout_gravity="center">
+            
+             <Button
+            android:id="@+id/btnUp5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_bkp"
+            android:layout_margin="4dp"
+            android:onClick="action"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:text="" /> 
+            
+          </RelativeLayout>
+</LinearLayout>

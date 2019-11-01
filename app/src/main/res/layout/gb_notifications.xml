@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+          <Spinner
+         android:id="@+id/sp_1"
+         android:layout_width="150sp"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_margin="5sp"
+          android:entries="@array/notoptions"
+         android:background="@drawable/button_default_bg"
+         android:padding="10dp" />
+    
+      <View
+          android:id="@+id/bordr"
+             android:layout_width="match_parent"
+             android:layout_height="1sp"
+             android:background="#ccc"
+             android:layout_margin="6sp"
+             android:layout_below="@+id/sp_1"
+             />
+ <RelativeLayout 
+    android:id="@+id/srchlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:layout_below="@+id/bordr">
+    
+    
+      
+    
+       <ListView
+        android:id="@+id/nots_lists"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@drawable/list_selector1" 
+        android:divider="#EEE"
+        android:dividerHeight="3dp"
+        android:layout_margin="3sp"
+        android:layout_below="@+id/keywordbox"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp" 
+        />
+    
+      </RelativeLayout>
+   
+</RelativeLayout>

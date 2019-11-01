@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <RelativeLayout 
+    android:id="@+id/upperHeader"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <TextView
+     android:id="@+id/ttlgrp"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentLeft="true"
+     android:layout_marginTop="10dp"
+     android:textStyle="bold"
+     android:padding="5dp"
+     android:textColor="#A9A9A9"
+     android:textSize="28sp"
+     android:text="GROUPS" />
+   
+     <Button
+         android:id="@+id/btngadd"
+         android:layout_width="130sp"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_margin="5sp"
+         android:background="@drawable/btn"
+         android:onClick="action"
+         android:padding="8dp"
+         android:text="ADD GROUP"
+         android:textColor="#fff" />
+ 
+     </RelativeLayout>
+      <View
+          android:id="@+id/bordr"
+             android:layout_width="match_parent"
+             android:layout_height="1sp"
+             android:background="#ccc"
+             android:layout_margin="6sp"
+             android:layout_below="@+id/upperHeader"
+             />
+ <RelativeLayout 
+    android:id="@+id/srchlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:layout_below="@+id/bordr">
+    
+     <EditText
+                android:id="@+id/keywordbox"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:singleLine="true"
+                android:lines="1"
+                android:layout_margin="7sp"
+                android:padding="7sp"
+                android:drawableLeft="@drawable/ic_search"
+                android:hint=" Search Groups"
+                android:background="@drawable/edittext_top_bg"
+                android:ems="1"
+                 /> 
+      
+    
+       <ListView
+        android:id="@+id/group_lists"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@drawable/list_selector1" 
+        android:divider="#EEE"
+        android:dividerHeight="3dp"
+        android:layout_margin="3sp"
+        android:layout_below="@+id/keywordbox"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp" 
+        />
+    
+      </RelativeLayout>
+   
+</RelativeLayout>

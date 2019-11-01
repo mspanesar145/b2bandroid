@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10sp" >
+
+    
+                       <TextView
+                        android:id="@+id/txt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5sp"
+                        android:text="Partner"
+                        android:textSize="16sp" />
+    
+     <Spinner
+			     android:id="@+id/sp_1"
+			     android:layout_width="match_parent"
+			     android:layout_height="wrap_content"
+			     android:layout_margin="5sp"
+			      android:background="@drawable/button_default_bg"
+			     android:padding="10dp"
+			      />
+     
+          <TextView
+                        android:id="@+id/txt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                         android:layout_margin="5sp"
+                        android:text="Payment Type"
+                        android:textSize="16sp" />
+     
+        <Spinner
+			     android:id="@+id/sp_2"
+			     android:layout_width="match_parent"
+			     android:layout_height="wrap_content"
+			     android:entries="@array/amt"
+			     android:layout_margin="5sp"
+			      android:background="@drawable/button_default_bg"
+			     android:padding="10dp"
+			      />
+     
+            <TextView
+                        android:id="@+id/txt3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                         android:layout_margin="5sp"
+                        android:text="Amount"
+                        android:textSize="16sp" />
+    
+           <EditText
+            android:id="@+id/sp_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_top_bg"
+            android:lines="1"
+            android:padding="15dp"
+            android:layout_margin="5sp"
+            android:inputType="number"
+            android:singleLine="true" 
+            android:textColorHint="#aaa"
+            android:textColor="#000">
+            <requestFocus />
+            </EditText>
+            
+                      <TextView
+                        android:id="@+id/txt4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                         android:layout_margin="5sp"
+                        android:text="Remarks"
+                        android:textSize="16sp" />
+            
+            <EditText
+            android:id="@+id/sp_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_top_bg"
+              android:lines="6"
+            android:layout_margin="5sp"
+            android:gravity="top"
+            android:padding="15dp"
+            android:singleLine="false"
+            android:textColorHint="#aaa"
+            android:textColor="#000"/>
+         
+             <Button
+            android:id="@+id/btnsp"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:background="@drawable/btn"
+            android:layout_margin="4dp"
+            android:onClick="action"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:text="Send Payment" />
+              
+
+
+</LinearLayout>
