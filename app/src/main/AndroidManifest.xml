@@ -3,9 +3,10 @@
     package="com.denchion.b2b">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
+
 
     <application
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -13,7 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
 
-    <activity android:name=".MainActivity">
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -31,6 +34,7 @@
         <activity android:name=".Quotations"></activity>
         <activity android:name=".QuoteDetails"></activity>
         <activity android:name=".Products"></activity>
+        <activity android:name=".ProductDetails"></activity>
         <activity android:name=".Categories"></activity>
 
         <activity android:name=".Messages"></activity>
@@ -61,5 +65,5 @@
 
         <activity android:name=".ThirdParty"></activity>
     </application>
-
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

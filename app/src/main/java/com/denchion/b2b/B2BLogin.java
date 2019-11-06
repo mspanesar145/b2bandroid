@@ -59,6 +59,7 @@ public class B2BLogin extends Activity implements AsyncResponse{
 						  Utils.setDefaults("code", code+"", getApplicationContext());
 	        	  HttpGetAsyncTask httpGetAsyncTask = new HttpGetAsyncTask(this,3); 
 	        	  httpGetAsyncTask.delegate = this;
+	        	  System.out.println(Utils.UrlLogin+data.toString());
 	        	  if(Utils.isConnectingToInternet(getApplicationContext()))
 		        	  httpGetAsyncTask.execute(Utils.UrlLogin+URLEncoder.encode(data.toString().replace(" ","_"), "UTF-8"));
 	        	  else

@@ -1,42 +1,39 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
- 
- <RelativeLayout 
-    android:id="@+id/srchlayout"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical" >
-    
-     <EditText
-                android:id="@+id/keywordbox"
-                android:layout_width="match_parent"
-                android:layout_height="40sp"
-                android:singleLine="true"
-                android:lines="1"
-                android:layout_margin="7sp"
-                android:padding="7sp"
-                android:drawableLeft="@drawable/ic_search"
-                android:hint=" Search Products"
-                android:background="@drawable/edittext_top_bg"
-                android:ems="1"
-                 /> 
-      
-    
-       <ListView
-        android:id="@+id/products"
-        android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/srchlayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:listSelector="@drawable/list_selector1" 
-        android:divider="#EEE"
-        android:dividerHeight="3dp"
-        android:layout_margin="3sp"
-        android:layout_below="@+id/keywordbox"
-        android:paddingLeft="3dp"
-        android:paddingRight="3dp" 
-        />
-    
-      </RelativeLayout>
-   
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/keywordbox"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_margin="7sp"
+            android:drawableLeft="@drawable/ic_search"
+            android:ems="1"
+            android:hint="Search Products"
+            android:lines="1"
+            android:padding="7sp"
+            android:singleLine="true" />
+
+        <ListView
+            android:id="@+id/products"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/keywordbox"
+            android:layout_margin="3sp"
+            android:divider="#EEE"
+            android:dividerHeight="3dp"
+            android:listSelector="@drawable/list_selector1"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp" />
+
+    </RelativeLayout>
+
 </RelativeLayout>
